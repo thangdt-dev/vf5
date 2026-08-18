@@ -40,7 +40,7 @@ p {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-image: url(/assets/herosection.png);
+    background-image: url(./assets/herosection.png);
     height: 570px;
     background-position: center center;
     background-repeat: no-repeat;
@@ -202,7 +202,7 @@ h2.title {
 
 .monolith__list>div:first-child {
     border-radius: 4px;
-    background-image: url(/assets/monolith.png);
+    background-image: url(./assets/monolith.png);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -220,7 +220,7 @@ h2.title {
 
 .monolith__list>div:last-child>div:first-child {
     border-radius: 4px;
-    background-image: url(/assets/monolith1.png);
+    background-image: url(./assets/monolith1.png);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -321,7 +321,7 @@ h2.title {
     width: 30%;
 }
 
-#showcase .option {
+b #showcase .option {
     display: flex;
     align-items: center;
     gap: 16px;
