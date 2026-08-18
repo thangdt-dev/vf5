@@ -290,3 +290,96 @@ h2.title {
     gap: 15px;
     justify-content: center;
 }
+
+/* showcase */
+#showcase {
+    margin: 64px 0 120px;
+    display: flex;
+    gap: 32px;
+    justify-content: space-between;
+}
+
+#showcase #img {
+    position: relative;
+    width: 70%;
+}
+
+#showcase #img .hero__tag {
+    position: absolute;
+    bottom: 36px;
+    left: 36px;
+}
+
+#showcase #select {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    background-color: var(--bg-card);
+    border-radius: 4px;
+    padding: 40px;
+    border: 1px solid var(--color-stroke);
+    width: 30%;
+}
+
+#showcase .option {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    cursor: pointer;
+    color: var(--text-secondary);
+}
+
+#showcase .option i {
+    font-size: 24px;
+}
+
+#showcase .option.active {
+    color: var(--text-color);
+}
+
+#showcase .option.active i {
+    -webkit-text-stroke: 2px var(--text-primary);
+}
+
+#option__list {
+    margin-top: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+#img {
+    border: 1px solid var(--color-stroke);
+    border-radius: 4px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#select button {
+    margin-top: 36px;
+}
+
+/* technical */
+.technical__list {
+    display: flex;
+    justify-content: space-between;
+    gap: 32px;
+    margin-top: 64px;
+    margin-bottom: 120px;
+}
+
+.technical__list>div {
+    width: 50%;
+}
+
+.technical__item {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--color-stroke);
+    padding: 16px 0;
+}
+
+.technical__item h3 {
+    font-weight: 500 !important;
+}

@@ -14,20 +14,24 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css"
         integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="css/animate.css">
+
 </head>
 
 <body>
     <section class="hero">
         <div class="hero__content container">
-            <p class="hero__tag">Limited Series Production</p>
-            <h1>FORCE OF<br />
+            <p class="hero__tag wow animate__animated animate__bounceInLeft">Limited Series Production</p>
+            <h1 class="wow animate__animated animate__bounceInLeft">FORCE OF<br />
                 <span>NATURE.</span> ENGINE BY
                 <br />WIRE.
             </h1>
-            <p>A monumental leap in electric performance. The VF5 redefines high-luxury utility with standard
+            <p class="wow animate__animated animate__bounceInLeft">A monumental leap in electric performance. The VF5
+                redefines high-luxury utility with standard
                 tri-motor vectoring and solid-state dynamics.</p>
-            <div class="hero__action">
-                <button class="primary">Configure Yours ></button>
+            <div class="hero__action  wow animate__animated animate__bounceInLeft">
+                <button class=" primary">Configure Yours ></button>
                 <button class="secondary">Configure Yours ></button>
                 <p><i class="fa-solid fa-circle"></i> PRE-ORDERS OPEN FOR 2026 DELIVERY</p>
             </div>
@@ -35,23 +39,24 @@
     </section>
 
     <section class="metric">
-        <div class="container">
-            <p class="tag">─ Precision Metrics</p>
-            <h2 class="title">Uncompromised Performance</h2>
+        <div class="container ">
+            <p class="tag wow animate__animated wow animate__animated animate__fadeInUp">─ Precision Metrics</p>
+            <h2 class="title wow animate__animated wow animate__animated animate__fadeInUp">Uncompromised
+                Performance</h2>
             <p>Every dynamic calibrated to challenge physics. The custom solid-state architectures deliver instantaneous
                 response with surgical accuracy.</p>
             <div class="metric__list">
-                <div class="metric__card">
+                <div class="metric__card wow animate__animated wow animate__animated animate__fadeInUp">
                     <p class="tag">0 - 60 MPH</p>
                     <h3>2.5s</h3>
                     <p>Instant launch with torque vectoring active. Tri-motor configuration pushing physics forward.</p>
                 </div>
-                <div class="metric__card">
+                <div class="metric__card wow animate__animated wow animate__animated animate__fadeInUp">
                     <p class="tag">Peak Output</p>
                     <h3>1,020 hp</h3>
                     <p>A synchronized electric powertrain delivering near-silent brutal force under demand.</p>
                 </div>
-                <div class="metric__card">
+                <div class="metric__card wow animate__animated wow animate__animated animate__fadeInUp">
                     <p class="tag">Estimated Range</p>
                     <h3>420 mi</h3>
                     <p>Silicon-carbide battery chemistry paired with active aerodynamic drag optimization.</p>
@@ -61,7 +66,7 @@
     </section>
 
     <section class="monolith">
-        <div class="container">
+        <div class="container wow animate__animated wow animate__animated animate__zoomIn">
             <p class="tag">─ Sculpted Monolith</p>
             <h2 class="title">Monolithic Form. Active Aerodynamics.</h2>
             <div class="monolith__list">
@@ -81,6 +86,74 @@
         </div>
     </section>
 
+    <section class="showcase">
+        <div class="container">
+            <p class="tag">─ Tailored Specs</p>
+            <h2 class="title">Personalize Your Obsidian</h2>
+            <div id="showcase">
+                <div id="img" class="animate__animated animate__fadeIn"
+                    style="background-image: url(/assets/car/desert\ beige.png);">
+                    <p class="hero__tag">Limited Build Slots Remaining</p>
+                </div>
+                <div id="select">
+                    <div>
+                        <h3>Paint Select</h3>
+                        <div id="option__list">
+
+                        </div>
+                    </div>
+                    <button class="primary">Lock Configuration ></button>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="technical">
+        <div class="container">
+            <p class="tag">─ Detailed Specs</p>
+            <h2 class="title">Technical Blueprint</h2>
+            <div class="technical__list">
+                <div>
+                    <div class="technical__item">
+                        <h3>Powertrain Architecture</h3>
+                        <p>Tri-Motor AWD with solid state components</p>
+                    </div>
+                    <div class="technical__item">
+                        <h3>Total Peak Torque</h3>
+                        <p>980 lb-ft vectoring variable</p>
+                    </div>
+                    <div class="technical__item">
+                        <h3>Battery Pack Capacity</h3>
+                        <p>118 kWh Silicon-Anode</p>
+                    </div>
+                    <div class="technical__item">
+                        <h3>Charging Rate (DC)</h3>
+                        <p>350 kW Peak (10-80% in 16 mins)</p>
+                    </div>
+                </div>
+                <div>
+                    <div class="technical__item">
+                        <h3>Wheelbase</h3>
+                        <p>119.3 in (3,030 mm)</p>
+                    </div>
+                    <div class="technical__item">
+                        <h3>Chassis System</h3>
+                        <p>Self-leveling adaptive multi-chamber air</p>
+                    </div>
+                    <div class="technical__item">
+                        <h3>Cargo Capacity</h3>
+                        <p>78.4 cubic feet (seats down)</p>
+                    </div>
+                    <div class="technical__item">
+                        <h3>LiDAR Array Refresh</h3>
+                        <p>200 Hz digital scanning</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
 
     <section class="explore">
         <video src="/assets/banner.mp4" loop autoplay></video>
@@ -90,11 +163,18 @@
             <p>Secure your priority slot on the private production roster. Test drive tours now<br /> expanding across
                 select
                 metropolitan hubs.</p>
-            <div><button class="primary">Configure Yours ></button>
+            <div>
+                <button class="primary">Configure Yours ></button>
                 <button class="secondary">Configure Yours ></button>
             </div>
         </div>
     </section>
+
+    <script src="/script.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
 </body>
 
 </html>
