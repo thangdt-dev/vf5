@@ -2,31 +2,31 @@ const carColors = [
     {
         id: 0,
         title: "Aerosol Gray",
-        image_url: "/assets/car/aerosol-gray.png",
+        image_url: "./assets/car/aerosol-gray.png",
         color_code: "#8A8F95"
     },
     {
         id: 1,
         title: "Desert Beige",
-        image_url: "/assets/car/desert-beige.png",
+        image_url: "./assets/car/desert-beige.png",
         color_code: "#D6C3A3"
     },
     {
         id: 2,
         title: "Forest Green",
-        image_url: "/assets/car/forest-green.png",
+        image_url: "./assets/car/forest-green.png",
         color_code: "#2F4F3E"
     },
     {
         id: 3,
         title: "Stealth Obsidian",
-        image_url: "/assets/car/steakth-obsidian.png",
+        image_url: "./assets/car/steakth-obsidian.png",
         color_code: "#1C1C1E"
     },
     {
         id: 4,
         title: "Urban Blue",
-        image_url: "/assets/car/urban-blue.png",
+        image_url: "./assets/car/urban-blue.png",
         color_code: "#3A5F8A"
     }
 ];
