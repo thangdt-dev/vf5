@@ -63,6 +63,49 @@ const changeShowcaseId = (id) => {
 
 loadList()
 
+const modal = document.getElementById('modal')
+let isTriggered = false;
 
+window.addEventListener('scroll', () => {
+    if (isTriggered) return;
 
+    const scrollTop = window.scrollY;
+    const docHeight = document.documentElement.scrollHeight - window.innerHeight;
 
+    const scrollPercent = (scrollTop / docHeight) * 100;
+
+    if (scrollPercent >= 30) {
+        modal.classList.add('active');
+        isTriggered = true;
+    }
+});
+
+const btnSubmit = document.getElementById('btnSubmit')
+const toast = document.getElementById('toast')
+const handleSubmit = (e) => {
+    e.preventDefault();
+
+    btnSubmit.innerHTML = `<div class="loader"></div>`;
+
+    setTimeout(() => {
+        modal.classList.remove('active');
+
+        // show toast + fade in
+        toast.classList.add('active', 'animate__animated', 'animate__fadeInUp');
+
+        setTimeout(() => {
+            toast.classList.remove('animate__fadeInUp');
+            toast.classList.add('animate__fadeOutDown');
+
+            // đợi animation xong rồi xoá class
+            setTimeout(() => {
+                toast.classList.remove(
+                    'active',
+                    'animate__animated',
+                    'animate__fadeOutDown'
+                );
+            }, 500);
+        }, 5000);
+
+    }, 2000);
+};

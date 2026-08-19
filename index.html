@@ -170,6 +170,27 @@
         </div>
     </section>
 
+    <section id="modal" class="">
+        <div class="container modal__content">
+            <span>x</span>
+            <h2>CONTACT TO EXPERIENCE</h2>
+
+            <form onsubmit="handleSubmit(event)">
+                <label for="fullname">Full Name (*) </label>
+                <input autofocus required type="text" name="fullname" id="" placeholder="Enter your fullname">
+
+                <label for="email">Email (*) </label>
+                <input type="text" required name="email" id="" placeholder="Enter your email">
+
+                <button id="btnSubmit" type="submit" class="primary">Submit it</button>
+            </form>
+        </div>
+    </section>
+
+    <div id="toast">
+        <h2><i class="fa-regular fa-circle-check"></i>Thanks for fill contact form</h2>
+    </div>
+
     <script src="script.js"></script>
     <script src="js/wow.min.js"></script>
     <script>

@@ -383,3 +383,114 @@ h2.title {
 .technical__item h3 {
     font-weight: 500 !important;
 }
+
+/* modal */
+#modal.active {
+    display: flex;
+    z-index: 99;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#modal {
+    display: none;
+    background-color: color-mix(in srgb, var(--bg-card) 50%, transparent);
+}
+
+
+
+.modal__content {
+    position: relative;
+    padding: 56px;
+    border: 1px solid var(--color-stroke);
+    color: var(--text-color);
+    border-radius: 4px;
+    background-color: var(--bg-card);
+}
+
+.modal__content span {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    cursor: pointer;
+    padding: 5px;
+}
+
+.modal__content span:hover {
+    color: var(--text-primary);
+}
+
+.modal__content form {
+    margin-top: 24px;
+}
+
+.modal__content input {
+    background-color: color-mix(in srgb, var(--color-stroke) 20%, transparent);
+    border: none;
+    width: 100%;
+    margin-top: 5px;
+    border-radius: 4px;
+    padding: 8px 16px;
+    display: block;
+    outline: none;
+    color: var(--text-color);
+    box-shadow: none;
+    margin-bottom: 16px;
+}
+
+.modal__content input::placeholder {
+    color: #aaa;
+    /* placeholder nhẹ hơn */
+}
+
+.modal__content input:focus {
+    outline: none;
+    border-bottom: 1px solid var(--text-primary);
+}
+
+.modal__content button {
+    width: full;
+}
+
+.loader {
+    border: 2px solid #f3f3f3;
+    border-top: 2px solid var(--text-primary);
+    border-radius: 50%;
+    width: 12px;
+    height: 12px;
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+#toast {
+    display: none;
+    position: fixed;
+    top: 10%;
+    right: 20px;
+    z-index: 99;
+    color: var(--text-color);
+    background-color: var(--bg-card);
+    padding: 16px 32px;
+    border-radius: 4;
+    border: 1px solid var(--color-stroke);
+    border-bottom: 1px solid var(--text-primary);
+}
+
+#toast.active {
+    display: block;
+}
