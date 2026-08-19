@@ -321,7 +321,7 @@ h2.title {
     width: 30%;
 }
 
-b #showcase .option {
+#showcase .option {
     display: flex;
     align-items: center;
     gap: 16px;
